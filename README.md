@@ -1,14 +1,113 @@
 # portfolio-firebase
+
+
+Firebase Hosting
+-------------------
+
+Firebase hosting is a simple, fast, secure & free hosting service provided by Google to deploy static websites that does not involve heavy data processing or any form of complex user authentication requirements. Firebase also provide hosting support with a custom domain with Free SSL certificates.
+
+
+Prerequisite:
+---------------
+
+A Google Firebase account
+
+Scenerio:
+-------------
+
+We are deploying a Portfolio on Firebase.
+
+
+1-Install Firebase CLI:
+------------------------
+
+ Install the Firebase CLI using the automatic install script:
+
+
+$ curl -sL https://firebase.tools | bash
+
+2-Clone a Portfolio:
+----------------------
+
+Clone a index.html file fromGithub.
+
+https://github.com/Cryptic-Gemini/Portfolio.git
+
+ 
+ 3-Google Firebase account:
+ -----------------------------
+
+Sign in to firebase.google.com using your Google account & Click on Go to console.
+
+
+4-Create a Firebase project:
+--------------------------
+
+Click on Add project and create your firebase project by entering the name of your project.
+In my case it is gzl-khan.
+
+
+
+
+ 5-Log In to Firebase:
+-----------------------
+
+Switch to the project directory (as firebase-app) and open the terminal to run the command:
+
+                         firebase login
+
+
+6-Initialize Your App:
+------------------------
+In my case I have a project directory as firebase-app that has a sub directory public.Its a folder that contains all assets to keep app up and running on firebase hosting service.
+Switch to the project directory (as firebase-app) and run the command:
+
+                           firebase init
+                           
+- Use arrow keys to select hosting. Press Spacebar to select features, then Enter to confirm your choices.
+
+- Then it will ask you to select your project.Use arrow keys to navigate to your project name and press enter.
+
+* **Note : If you are not getting the project list in Project setup , then use the command firebase use --add after step 5 & then proceed to step 6 again.
+
+It will ask you to select your project and set an alias for your project.
+
+? Which project do you want to add? portfolio-demo-5979c
+
+? What alias do you want to use for this project? (e.g. staging) default
+
+- It will ask you to confirm the name of your distribution folder.In our case we have a distribution folder as public.
+
+- Answer the rest questions with No as It will try to override your index.html file
+
+- Finishing project setup creates a firebase.json settings file in the root of your project directory.
+
+7-Deploy Site:
+---------------------
+
+Let’s deploy the site with command:
+
+                      $firebase deploy
+
+- Done! Copy Hosting URL and paste it in the browser.Your app is running as :
+
+https://gzl-khan.firebaseapp.com/
+
+
+- You can check your domain by clicking your project and then Hosting from the left panel.
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+Summary:
 Deployment of portfolio on firebase
-
-
-
-Firebase Hosting:
-
-Firebase Hosting provides fast and secure hosting for your web app, static and dynamic content, and microservices.
-Firebase Hosting is production-grade web content hosting for developers. With a single command, you can quickly deploy web apps and serve both static and dynamic content to a global CDN (content delivery network). You can also pair Firebase Hosting with Cloud Functions or Cloud Run to build and host microservices on Firebase.
-
-Using the Firebase CLI, you deploy files from local directories on your computer to your Hosting server. Beyond serving static content, you can use Cloud Functions for Firebase or Cloud Run to serve dynamic content and host microservices on your sites. All content is served over an SSL connection from the closest edge server on our global CDN.
+---------------------------------------------------------------------------------------------------------------------------
 
 Prerequisites
 NodeJS and NPM
