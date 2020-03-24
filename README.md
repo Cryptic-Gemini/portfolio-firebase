@@ -68,7 +68,7 @@ Switch to the project directory (as firebase-app) and run the command:
 
 - Then it will ask you to select your project.Use arrow keys to navigate to your project name and press enter.
 
-* **Note : If you are not getting the project list in Project setup , then use the command firebase use --add after step 5 & then proceed to step 6 again.
+**Note : If you are not getting the project list in Project setup , then use the command firebase use --add after step 5 & then proceed to step 6 again.
 
 It will ask you to select your project and set an alias for your project.
 
@@ -91,7 +91,7 @@ Let’s deploy the site with command:
 
 - Done! Copy Hosting URL and paste it in the browser.Your app is running as :
 
-https://gzl-khan.firebaseapp.com/
+                     https://gzl-khan.firebaseapp.com/
 
 
 - You can check your domain by clicking your project and then Hosting from the left panel.
